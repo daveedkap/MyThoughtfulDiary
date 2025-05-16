@@ -6,13 +6,34 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A91BFEB02DD2919E00E20DBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A91BFEAF2DD2919E00E20DBC /* GoogleService-Info.plist */; };
+		A9D5D96C2DD2A2FC00F84802 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A9D5D96B2DD2A2FC00F84802 /* FirebaseAuth */; };
+		A9D5D96E2DD2A2FC00F84802 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = A9D5D96D2DD2A2FC00F84802 /* FirebaseCore */; };
+		A9D5D9702DD2A2FC00F84802 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A9D5D96F2DD2A2FC00F84802 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A91BFE9C2DD2912C00E20DBC /* MyThoughtfulDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyThoughtfulDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91BFEAF2DD2919E00E20DBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A9D5D9952DD7E8E600F84802 /* Exceptions for "MyThoughtfulDiary" folder in "MyThoughtfulDiary" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A91BFE9B2DD2912C00E20DBC /* MyThoughtfulDiary */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A91BFE9E2DD2912D00E20DBC /* MyThoughtfulDiary */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A9D5D9952DD7E8E600F84802 /* Exceptions for "MyThoughtfulDiary" folder in "MyThoughtfulDiary" target */,
+			);
 			path = MyThoughtfulDiary;
 			sourceTree = "<group>";
 		};
@@ -23,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D5D96E2DD2A2FC00F84802 /* FirebaseCore in Frameworks */,
+				A9D5D96C2DD2A2FC00F84802 /* FirebaseAuth in Frameworks */,
+				A9D5D9702DD2A2FC00F84802 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +56,7 @@
 		A91BFE932DD2912C00E20DBC = {
 			isa = PBXGroup;
 			children = (
+				A91BFEAF2DD2919E00E20DBC /* GoogleService-Info.plist */,
 				A91BFE9E2DD2912D00E20DBC /* MyThoughtfulDiary */,
 				A91BFE9D2DD2912C00E20DBC /* Products */,
 			);
@@ -65,6 +90,9 @@
 			);
 			name = MyThoughtfulDiary;
 			packageProductDependencies = (
+				A9D5D96B2DD2A2FC00F84802 /* FirebaseAuth */,
+				A9D5D96D2DD2A2FC00F84802 /* FirebaseCore */,
+				A9D5D96F2DD2A2FC00F84802 /* FirebaseFirestore */,
 			);
 			productName = MyThoughtfulDiary;
 			productReference = A91BFE9C2DD2912C00E20DBC /* MyThoughtfulDiary.app */;
@@ -94,6 +122,9 @@
 			);
 			mainGroup = A91BFE932DD2912C00E20DBC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A9D5D96A2DD2A2FC00F84802 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A91BFE9D2DD2912C00E20DBC /* Products */;
 			projectDirPath = "";
@@ -109,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91BFEB02DD2919E00E20DBC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +287,7 @@
 				DEVELOPMENT_TEAM = 758XHSN442;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyThoughtfulDiary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +317,7 @@
 				DEVELOPMENT_TEAM = 758XHSN442;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyThoughtfulDiary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +358,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9D5D96A2DD2A2FC00F84802 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9D5D96B2DD2A2FC00F84802 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9D5D96A2DD2A2FC00F84802 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A9D5D96D2DD2A2FC00F84802 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9D5D96A2DD2A2FC00F84802 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		A9D5D96F2DD2A2FC00F84802 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9D5D96A2DD2A2FC00F84802 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A91BFE942DD2912C00E20DBC /* Project object */;
 }

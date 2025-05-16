@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
-struct MyThoughtfulDiaryApp: App {
+struct DiaryApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnboardingView()
         }
     }
 }
