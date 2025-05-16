@@ -1,0 +1,9 @@
+# Firebase secret
+GoogleService-Info.plist
+
+# Xcode
+*.xcuserstate
+*.xcworkspace
+*.xcuserdata/
+DerivedData/
+build/
